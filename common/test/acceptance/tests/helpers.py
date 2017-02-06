@@ -827,8 +827,8 @@ def assert_nav_help_link(test, page, href, signed_in=True, close_window=True):
     test (AcceptanceTest): Test object
     page (PageObject): Page object to perform tests on.
     href (str): The help link which we expect to see when it is opened.
-    signed_in (bool): Specifies whether user is logged in or not. (It effects the css)
-    close_window(bool): Calls close_help_window by default
+    signed_in (bool): Specifies whether user is logged in or not. (It affects the css)
+    close_window(bool): Close the newly-opened help window before continuing
     """
     expected_link = {
         'href': href,
